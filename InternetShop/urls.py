@@ -30,10 +30,10 @@ urlpatterns = [
     path('categories/', categories_view),
     path('products/create/', create_product_view),
 
-    #users
+    # users
     path('users/login/', login_view),
     path('users/logout/', logout_view),
     path('users/register/', register_view)
 ]
 
-urlpatterns += static(MEDIA_URL, document_root= MEDIA_ROOT)
+urlpatterns += static(MEDIA_URL, document_root=MEDIA_ROOT)
